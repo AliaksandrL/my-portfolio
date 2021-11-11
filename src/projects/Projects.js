@@ -1,5 +1,4 @@
 import React from "react";
-import styleContainer from '../common/styles/Container.module.css';
 import style from './Projects.module.scss';
 import Project from './project/Project';
 import Title from '../common/components/title/Title';
@@ -15,7 +14,7 @@ const Projects = () => {
     }
     return (
         <div className={style.projectsBlock}>
-            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+            <div className={`${style.container} ${style.projectsContainer}`}>
                 <Title text={"Projects"}/>
                 <div className={style.projects}>
                     <Project style={social} title={"Social network"} description={"sed do eiusmod tempor..."}/>

@@ -42,13 +42,13 @@
     padding: 25px 20px;
 
     .projectTitle {
-      @include text($TitleFontFamily, 16px, 1.2);
+      @include text($TitleFontFamily, 16px, 1.2, 1);
       letter-spacing: 1px;
       margin: 0 0 5px;
     }
 
     .description {
-      @include text($TextFontFamily, 12px, 1.8);
+      @include text($TextFontFamily, 12px, 1.8, 1);
       font-weight: 400;
     }
   }

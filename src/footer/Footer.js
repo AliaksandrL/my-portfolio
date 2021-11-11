@@ -1,11 +1,10 @@
 import React from "react";
-import style from './Footer.module.css';
-import styleContainer from '../common/styles/Container.module.css';
+import style from './Footer.module.scss';
 
 const Footer = () => {
     return (
         <div className={style.footer}>
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
+            <div className={`${style.container} ${style.footerContainer}`}>
                 <h2 className={style.title}>Sasha Lipski</h2>
                 <div className={style.socialIcons}>
                     <div className={style.socialIcon}></div>
