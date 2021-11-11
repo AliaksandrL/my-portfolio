@@ -6,10 +6,18 @@
   @include flex(row, center, center, nowrap);
   padding: 100px 0;
 
+  .tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+  }
+
   .container {
     @include container();
     @include flex(row, space-around, center, wrap);
-    border: 1px solid;
 
     .greeting {
       @include flex(column, flex-start, flex-start, nowrap);
@@ -41,20 +49,49 @@
           }
         }
       }
+
+      h1 {
+        @include text($TitleFontFamily, 28px, 1.8, 400);
+        margin: 0;
+      }
+
+      @media screen and (max-width: 1143px) {
+        align-items: center;
+      }
+    }
+
+    .photo {
+      position: relative;
+      z-index: 1;
+      @media screen and (max-width: 1143px) {
+        margin-top: 50px;
+      }
+
+      .image {
+        height: 400px;
+        width: 300px;
+        @include bgSettings();
+        background-image: url("./../assets/image/Todolist.jpg");
+        background-position: 80% 0;
+        @media screen and (max-width: 600px) {
+          height: 360px;
+          width: 260px;
+          transition: .5s;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 110%;
+          width: 105%;
+          border: 5px solid $primaryColor;
+          left: 15px;
+          top: -15px;
+          z-index: -1;
+        }
+      }
     }
   }
 }
 
-//
-//
-//.text {
-//  width: 300px;
-//  background-color: #457fee;
-//}
-//
-//.photo {
-//  width: 300px;
-//  height: 400px;
-//  background-color: #457fee;
-//}
 

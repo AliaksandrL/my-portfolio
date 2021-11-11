@@ -1,5 +1,5 @@
 import React from "react";
-import style from './Hire.module.css';
+import style from './Hire.module.scss';
 
 const Hire = () => {
     return (

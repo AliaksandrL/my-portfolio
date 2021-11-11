@@ -1,8 +1,8 @@
 import React from "react";
-import style from './Footer.module.scss';
-import Title from "../common/components/title/Title";
+import style from './Nav.module.scss';
+import Title from "../../common/components/title/Title";
 
-const Footer = () => {
+const Nav = () => {
     return (
         <div className={style.footer}>
             <div className={style.container}>
@@ -35,4 +35,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default Nav;
