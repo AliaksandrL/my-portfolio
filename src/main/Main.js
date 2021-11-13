@@ -1,6 +1,10 @@
 import React from "react";
 import style from './Main.module.scss';
 import Particles from "react-tsparticles";
+import Fade from 'react-reveal/Fade';
+import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-tilt';
+
 
 const particlesOptions = {
     particles: {
@@ -41,7 +45,7 @@ const particlesOptions = {
             }
         },
         size: {
-            value: 30,
+            value: 10,
             random: true,
             anim: {
                 enable: true,
@@ -76,20 +80,26 @@ const particlesOptions = {
 
 const Main = () => {
     return (
-        <div className={style.mainBlock}>
-            <Particles className={style.tsparticles} params={particlesOptions}/>
-            <div className={style.container}>
-                <div className={style.greeting}>
-                    <span>Hi There</span>
-                    <span>I am Aliaksandr <span>Lipski</span></span>
-                    <h1>Frontend Developer</h1>
-                </div>
-                <div className={style.photo}>
-                    <div className={style.image}>
-
+        <div id="main" className={style.mainBlock}>
+            <Particles className={style.particles} params={particlesOptions}/>
+            <Fade top>
+                <div className={style.container}>
+                    <div className={style.greeting}>
+                        <span>Hi There</span>
+                        <span>I am Aliaksandr <span>Lipski</span></span>
+                        <ReactTypingEffect
+                            text="Frontend Developer"
+                        />
                     </div>
+                    <Tilt className="Tilt" options={{max: 25}}>
+                        <div className={style.photo}>
+                            <div className={style.image}>
+
+                            </div>
+                        </div>
+                    </Tilt>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 }

@@ -1,11 +1,14 @@
 @import "../../common/styles/sass/variables";
 @import "../../common/styles/sass/mixins";
+@import "../../common/components/button/Button.module";
 
 .project {
   width: 450px;
   display: flex;
   flex-direction: column;
+  color: $textColor;
   background-color: $bgSecondColor;
+
 
   .image {
     height: 300px;
@@ -30,11 +33,13 @@
     }
 
     .viewBtn {
-      background-color: $primaryColor;
-      padding: 10px 20px;
-      position: relative;
-      z-index: 1;
-      color: $textColor;
+      @extend .btn;
+      //background-color: $primaryColor;
+      //padding: 1px 20px;
+      //position: relative;
+      z-index: 10;
+      margin-top: 30px;
+      //color: $textColor;
     }
   }
 

@@ -1,38 +1,49 @@
 import React from "react";
 import style from './Nav.module.scss';
-import Title from "../../common/components/title/Title";
+import {Link, animateScroll as scroll} from "react-scroll";
+
 
 const Nav = () => {
     return (
-        <div className={style.footer}>
-            <div className={style.container}>
-                <Title text={"Sasha Lipski"}/>
-                <div className={style.socialIcons}>
-                    <div className={style.socialIcon}>
-                        <a href="">
-                            <img src={"telegramIcon"} alt=""/>
-                        </a>
-                    </div>
-                    <div className={style.socialIcon}>
-                        <a href="">
-                            <img src={"facebookIcon"} alt=""/>
-                        </a>
-                    </div>
-                    <div className={style.socialIcon}>
-                        <a href="">
-                            <img src={"linkedinIcon"} alt=""/>
-                        </a>
-                    </div>
-                    <div className={style.socialIcon}>
-                        <a href="">
-                            <img src={"vkIcon"} alt=""/>
-                        </a>
-                    </div>
-                </div>
-                <span className={style.copyright}>2021 All Rights Reserved</span>
-            </div>
+        <div className={style.nav}>
+            {/*<a href="">Main</a>*/}
+            <Link
+                activeClass={style.active}
+                to="main"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={500}
+            >Main</Link>
+            {/*<a href="">Skills</a>*/}
+            <Link
+                activeClass={style.active}
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={500}
+            >Skills</Link>
+            <a href="#projects">Projects</a>
+            <Link
+                activeClass={style.active}
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={500}
+            >Projects</Link>
+            {/*<a href="">Contacts</a>*/}
+            <Link
+                activeClass={style.active}
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={500}
+            >Contacts</Link>
         </div>
-    )
+    );
 }
 
 export default Nav;

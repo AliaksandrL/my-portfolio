@@ -5,14 +5,15 @@
   min-height: 100vh;
   @include flex(row, center, center, nowrap);
   padding: 100px 0;
+  color: $textColor;
 
-  .tsparticles {
+  .particles {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.3;
+    opacity: 0.1;
   }
 
   .container {
@@ -48,11 +49,10 @@
             }
           }
         }
-      }
-
-      h1 {
-        @include text($TitleFontFamily, 28px, 1.8, 400);
-        margin: 0;
+        &:nth-child(3) {
+            @include text($TitleFontFamily, 28px, 1.8, 400);
+            margin: 0;
+        }
       }
 
       @media screen and (max-width: 1143px) {
@@ -71,7 +71,7 @@
         height: 400px;
         width: 300px;
         @include bgSettings();
-        background-image: url("./../assets/image/Todolist.jpg");
+        background-image: url("./../assets/image/myPhoto.jpg");
         background-position: 80% 0;
         @media screen and (max-width: 600px) {
           height: 360px;

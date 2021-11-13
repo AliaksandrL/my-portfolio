@@ -13,8 +13,8 @@ const Projects = () => {
         backgroundImage: 'url(' + todoImage + ')',
     }
     return (
-        <div className={style.projectsBlock}>
-            <div className={`${style.container} ${style.projectsContainer}`}>
+        <div id="projects" className={style.projectsBlock}>
+            <div className={style.container}>
                 <Title text={"Projects"}/>
                 <div className={style.projects}>
                     <Project style={social} title={"Social network"} description={"sed do eiusmod tempor..."}/>

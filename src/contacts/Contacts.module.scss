@@ -8,7 +8,6 @@
   .container {
     @include container();
     @include flex(column, flex-start, center, nowrap);
-    border: 1px solid;
 
     .form {
       @include flex(column, flex-start, stretch, nowrap);
