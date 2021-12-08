@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.9435d3c3.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.45aa1e4a.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.45aa1e4a.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.71a80e2d.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.71a80e2d.js.map",
+    "static/js/2.2e807c28.chunk.js": "/my-portfolio/static/js/2.2e807c28.chunk.js",
+    "static/js/2.2e807c28.chunk.js.map": "/my-portfolio/static/js/2.2e807c28.chunk.js.map",
+    "static/js/3.da0b8d05.chunk.js": "/my-portfolio/static/js/3.da0b8d05.chunk.js",
+    "static/js/3.da0b8d05.chunk.js.map": "/my-portfolio/static/js/3.da0b8d05.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "static/css/main.9435d3c3.chunk.css.map": "/my-portfolio/static/css/main.9435d3c3.chunk.css.map",
+    "static/js/2.2e807c28.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.2e807c28.chunk.js.LICENSE.txt",
+    "static/media/Todolist.f6a76094.jpg": "/my-portfolio/static/media/Todolist.f6a76094.jpg",
+    "static/media/Main.module.scss": "/my-portfolio/static/media/myPhoto.912f8661.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71a80e2d.js",
+    "static/js/2.2e807c28.chunk.js",
+    "static/css/main.9435d3c3.chunk.css",
+    "static/js/main.45aa1e4a.chunk.js"
+  ]
+}
