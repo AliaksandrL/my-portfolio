@@ -24,7 +24,7 @@ const Nav = () => {
                 offset={1}
                 duration={500}
             >Skills</Link>
-            <a href="#projects">Projects</a>
+            {/*<a href="#projects">Projects</a>*/}
             <Link
                 activeClass={style.active}
                 to="projects"
