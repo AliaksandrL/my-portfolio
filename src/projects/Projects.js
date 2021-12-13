@@ -2,12 +2,13 @@ import React from "react";
 import style from './Projects.module.scss';
 import Project from './project/Project';
 import Title from '../common/components/title/Title';
-import todoImage from './../assets/image/Todolist.jpg'
+import todoImage from './../assets/image/todolist.jpeg'
+import socialImage from './../assets/image/social-media-small-businesses-use.jpg'
 
 
 const Projects = () => {
     const social = {
-        backgroundImage: `url(${todoImage})`,
+        backgroundImage: `url(${socialImage})`,
     }
     const todolist = {
         backgroundImage: 'url(' + todoImage + ')',
@@ -17,9 +18,9 @@ const Projects = () => {
             <div className={style.container}>
                 <Title text={"Projects"}/>
                 <div className={style.projects}>
-                    <Project style={social} title={"Social network"} description={"sed do eiusmod tempor..."}/>
+                    <Project style={social} title={"Social network"} description={"Social network: research project, sharpening skills"} href_first={'https://aliaksandrl.github.io/react-social-network/'}/>
                     <Project style={todolist} title={"Todo list"}
-                             description={"Lorem ipsum dolor sit amet, consectetur..."}/>
+                             description={"To do list for every day on the week"} href_first={'https://aliaksandrl.github.io/todolist-ts/'}/>
                 </div>
             </div>
         </div>
