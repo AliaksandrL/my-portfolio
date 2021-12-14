@@ -9,6 +9,8 @@
     @include text($TitleFontFamily, 16px, 1.2, 400);
     color: $textColor;
     cursor: pointer;
+    margin: 0 10px;
+
 
     &:hover {
       text-decoration: none;

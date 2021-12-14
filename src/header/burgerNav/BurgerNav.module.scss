@@ -48,11 +48,16 @@
   .burgerBtn {
     width: 30px;
     height: 30px;
-    background-color: $primaryColor;
+    //background-color: $primaryColor;
     position: absolute;
     top: 24px;
     right: 20px;
   }
+
+  .burgerMenuOpen {
+    transform: rotate(90deg);
+  }
+
 
   @media screen and (min-width: 400px) {
     display: none;
