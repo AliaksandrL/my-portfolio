@@ -11,8 +11,8 @@ const Contacts = () => {
                 <Title text={"Contacts"}/>
                 <Fade>
                 <form className={style.form}>
-                    <input type="text" className={style.formArea} placeholder={"Name"}/>
-                    <input type="text" className={style.formArea} placeholder={"e-mail"}/>
+                    <input type="text" className={style.formArea} placeholder={"Name"} cols="30"/>
+                    <input type="email" className={style.formArea} placeholder={"e-mail"}/>
                     <textarea className={style.messageArea} placeholder={"Message"}/>
                     <button type="submit">Send message</button>
                 </form>

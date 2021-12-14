@@ -19,7 +19,7 @@
 
       .formArea,
       .messageArea {
-        background: $bgSecondColor;
+        //background: $bgSecondColor;
         border: 1px solid #4a4a4a;
         box-sizing: border-box;
         @include text(inherit, 12px, 1.5, 400);

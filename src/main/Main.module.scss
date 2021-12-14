@@ -2,7 +2,7 @@
 @import "../common/styles/sass/variables.scss";
 
 .mainBlock {
-  min-height: 100vh;
+  min-height: 90vh;
   @include flex(row, center, center, nowrap);
   padding: 100px 0;
   color: $textColor;

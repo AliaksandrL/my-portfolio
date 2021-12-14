@@ -17,13 +17,13 @@ const Skills = () => {
             <div className={style.container}>
                 <Title text={"Skills"}/>
                 <div className={style.skills}>
-                    <Skill title={"Redux"} description={"...there should be text here...there should be text here..."} icon={react}/>
-                    <Skill title={"Redux"} description={"...there should be text here...there should be text here..."} icon={js}/>
-                    <Skill title={"ts"} description={"...there should be text here...there should be text here..."} icon={ts}/>
+                    <Skill title={"React"} description={"...there should be text here...there should be text here..."} icon={react}/>
+                    <Skill title={"JavaScript"} description={"...there should be text here...there should be text here..."} icon={js}/>
+                    <Skill title={"TypeScript"} description={"...there should be text here...there should be text here..."} icon={ts}/>
                     <Skill title={"Redux"} description={"...there should be text here...there should be text here..."} icon={redux}/>
-                    <Skill title={"Redux"} description={"...there should be text here...there should be text here..."} icon={css}/>
-                    <Skill title={"Redux"} description={"...there should be text here...there should be text here..."} icon={dotnet}/>
-                    <Skill title={"Redux"} description={"...there should be text here...there should be text here..."} icon={mysql}/>
+                    <Skill title={"CSS3"} description={"...there should be text here...there should be text here..."} icon={css}/>
+                    <Skill title={".NET Framework"} description={"...there should be text here...there should be text here..."} icon={dotnet}/>
+                    <Skill title={"MySQL"} description={"...there should be text here...there should be text here..."} icon={mysql}/>
                     {/*<Skill title={"React"}*/}
                     {/*       description={"...there should be text here...there should be text here...there should be text here..."}/>*/}
                 </div>
